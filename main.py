@@ -54,8 +54,8 @@ while True:
     response = requests.post(webhook_url, json=data)
     
     if 200 <= response.status_code < 300:
-        print("Stats sent to webhook successfully (:.")
+        print("Stats sent to webhook successfully (:")
     else:
-        print(f"Failed to send stats to weebhook :(. Status Code: {response.status_code}")
+        print(f"Failed to send stats to weebhook :( Status Code: {response.status_code}")
     
     time.sleep(180)
